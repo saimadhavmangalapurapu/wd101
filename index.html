@@ -1,0 +1,69 @@
+<Html>  
+<head>   
+<title>  
+Registration Form
+</title>  
+<script>
+function savedata(){
+var input=document.getElementById("autonumero");
+sessionStorage.setItem("id",input.value);
+return true;
+}
+</script>
+</head>  
+<body >  
+<form id="myForm" method="get">
+<table>
+<tr>
+<td>
+Name
+</td>
+<td>
+<input type="text" id="name" value="">
+</td>
+</tr>
+<tr>
+<td>
+Email
+</td>
+<td>
+<input type="mail">
+</td>
+</tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+<input type="password">
+</td>
+</tr>
+<tr>
+<td>
+Date of Birth
+</td>
+<td>
+<input type="date">
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<div class="input-name">
+<input type="checkbox">
+<lable>Accept Terms and Conitions</label>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<input type="submit" onclick="return savedata()" value="Submit">
+</td>
+</tr>
+</table>
+</form>
+</body>  
+</html>  
